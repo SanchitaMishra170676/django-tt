@@ -35,7 +35,66 @@
     <h style="color: white; ">AEXP | axp_monthly_patching_dashboard_linux</h>
 </nav>
 
-<div class="container mt-4 p-2 ">
+<!-- Choice of Options -->
+<div class="card mt-2"  >
+  <span class="d-flex justify-content-center ">
+
+    <span class="col-12 navbar  bg-light">
+      <span class="col-1">
+        <select class="btn bg-light" style="color: black;" name="new_wave" id="uwave" dir="rtl" required>
+          <option value="">------env------</option>
+          <option value="env1">env1</option>
+          <option  value="env2">env2</option>
+          <option  value="env3">env3</option>
+        </select>
+      </span>
+      <span class="col-1">
+        <select class="btn bg-light" style="color: black;" name="new_wave" id="uwave" dir="rtl" required>
+          <option value="">------mnt------</option>
+          <option value="jan">Jan</option>
+          <option value="feb">Feb</option>
+          <option value="mar">Mar</option>
+          <option value="apr">Apr</option>
+        </select>
+      </span>
+      <span class="col-1">
+        <select class="btn bg-light" style="color: black;" name="new_wave" id="uwave" dir="rtl" required>
+          <option value="">------tla------</option>
+          <option value="env1">tla1</option>
+          <option  value="env2">tla2</option>
+          <option  value="env3">tla3</option>
+        </select>
+      </span>
+      <span class="col-2">
+        <button class="btn col-12 form-control btn-light" style="margin-left: -20px; padding-left:40px; padding-right:40px;">Apply Filters</button>
+      </span>
+      
+      <span class="col-1.5">
+        <input class="btn" type="radio" checked name="temp_per" id="">
+        <label for="" style="color: black;">Temporary</label>
+      </span>
+      <span class="col-1.5">
+        <input class="btn" type="radio" name="temp_per" id="">
+        <label for=""  style="color: black;"> &nbsp Permanent</label>
+      </span>
+      <span class="col-1.5">
+        <input class="btn" type="radio" checked name="one_zero" id="">
+        <label for="" style="color: black;"> &nbsp One Touch</label>
+      </span>
+      <span class="col-1.5">
+        <input class="btn" type="radio" name="one_zero" id="">
+        <label for="" style="color: black;"> &nbsp Zero Touch</label>
+      </span>
+
+    </span>
+  </span>
+</div>
+
+<div class="container mt-4 ">
+
+
+
+
   <!-- Table -->
 
   <form action="/" enctype="multipart/form-data"  method="post">
@@ -65,8 +124,10 @@
       </table>
       </div>
       
+  
+
   <!-- Random Selection -->
-  <div class="card mt-4 p-4 bg-dark" >
+  <div class="card mt-2 p-4 bg-dark" >
  
     <input type="text" name="itype" id="" value="1" style="display: none;">
     <span class="d-flex justify-content-center row">
@@ -115,6 +176,7 @@
   
         <div>
             <textarea name="details" rows="10" style="width: 100%;"></textarea>
+            
             <button type="submit" class="btn form-control btn-dark" >Update</button>
         </div>
         </form>
